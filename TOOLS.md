@@ -2,38 +2,28 @@
 
 Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
 
-## What Goes Here
+## Cron 定时任务
 
-Things like:
+| 时间 | 任务 | 说明 |
+|------|------|------|
+| 9:00 | HEARTBEAT | 每日任务检查 + 喝水提醒 |
+| 10:00 | 喝水提醒 | 站起来活动一下 |
+| 11:00 | 喝水提醒 | 站起来活动一下 |
+| 15:00 | 喝水提醒 | 站起来活动一下 |
+| 16:00 | HEARTBEAT | 每日任务检查 + 喝水提醒 |
+| 18:00 | 喝水提醒 | 工作快结束了 |
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+时区：Asia/Shanghai
 
-## Examples
+## TTS
 
-```markdown
-### Cameras
+- 飞书渠道已测试，支持语音消息
+- 默认用文字沟通（效率更高）
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+## Git 远程仓库
 
-### SSH
-
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
+- GitHub: https://github.com/szlulj/openclaw-assistant
+- 私有仓库，仅自己可见
 
 ---
 
